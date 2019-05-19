@@ -9,7 +9,7 @@ const createStore = (reducer) => {
     state = reducer(state, action)
     listen.forEach(listenFn => listenFn())
   }
-  dispatch(null)
+  dispatch(null) // 初始化State值
   return {
     getState,
     subscribe,
