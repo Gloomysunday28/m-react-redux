@@ -13,10 +13,6 @@ class Provide extends Component { // 根组件, 利用context传递store
       store: this.props.store
     }
   }
-  componentWillMount() {
-    // const store = this.props.store
-    // store.subscribe(_ => )
-  }
   render() {
     return <div>{this.props.children}</div>
   }
